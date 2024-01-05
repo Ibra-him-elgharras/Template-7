@@ -8,16 +8,16 @@
 }
 
 body{
-    background-color: green;
+    background: rgba(24, 227, 24, 0.515);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .box{
-    background-color: aqua;
-    width: 60%;
-    height: 50vh;
+    background-color: #fff;
+    width: 380px;
+    height: 55vh;
     position: absolute;
     top: 25%;
     bottom: 25%;
@@ -26,20 +26,94 @@ body{
 
 .box .title{
     line-height: 80px;
-    background: rgba(24, 227, 24, 0.515);
+    background-color: green;
     border-radius: 5px 5px 0 0;
-    padding-left: 20px;
+    text-align: center;
     font-size: 25px;
     font-weight: 600;
     color: #fff;
 }
 
 .box form{
-    padding: 30px 20px 25px 20px;
+    padding: 30px 25px 25px 25px;
 }
 
 .box form .row{
     height: 45px;
-    background-color: red;
-    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
 }
+
+.box form .row input{
+   height: 100%;
+   width: 100%;
+   padding-left: 60px;
+   outline: none;
+   border-radius: 5px;
+   border: 1px solid lightgrey;
+   font-size: 16px;
+   transition: all 0.3s ease;
+}
+
+form .row input:focus{
+   border-color: rgba(24, 227, 24, 0.515);
+   box-shadow: inset 0px 0px 2px 2px rgba(24, 227, 24, 0.515);
+ }
+ 
+
+.box form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    font-size: 18px;
+    color: #fff;
+    background: green;
+    border: 1px solid lightgrey;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box form .button input{
+    color: #fff;
+    font-size: 18px;
+    padding-left: 0px;
+    background: green;
+    border: 1px solid green;
+    cursor: pointer;
+}
+
+form .button input:hover{
+    background: rgba(24, 227, 24, 0.959);
+}
+
+.box .pass{
+    margin: -8px 0 20px 0;
+}
+
+.box .pass a{
+    color: green;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.box .pass a:hover{
+    text-decoration: underline;
+}
+
+.box .signup-link{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box .signup-link a{
+    color: green;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.box .signup-link a:hover{
+    text-decoration: underline;
+}
+
